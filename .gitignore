@@ -1,6 +1,6 @@
 /bitrix
 /upload
-/.idea
+.idea/
 .access.php
 .htaccess
 .section.php
