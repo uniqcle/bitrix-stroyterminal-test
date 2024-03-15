@@ -17,4 +17,4 @@ if ($APPLICATION->GetGroupRight($module_id)<"S"){
 
 \Bitrix\Main\Loader::includeModule($module_id);
 
-echo 'Настройки модуля. Раздел в разработке...'; 
+echo 'Настройки модуля. Раздел в разработке...';
