@@ -1,0 +1,10 @@
+/bitrix
+/upload
+.access.php
+.htaccess
+.section.php
+404.php
+500.html
+favicon.ico
+index.php
+urlrewrite.php
