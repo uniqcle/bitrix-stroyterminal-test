@@ -1,6 +1,7 @@
 <?php
 namespace Uniqcle\IBlock;
 \CModule::includeModule("sale");
+use Bitrix\Main\Localization\Loc;
 // \Bitrix\Main\Loader::includeModule('sale');
 
 class IBlockUniqcle{
@@ -174,6 +175,18 @@ class IBlockUniqcle{
 
 			$ID = $ib->Add($arFields);
 		}
+
+		$uniqcle_iblock = \Bitrix\Main\Config\Configuration::getInstance()-> get('uniqcle_iblock');
+
+//		if($uniqcle_iblock['id'] || $uniqcle_iblock['id'] > 0){
+//			echo \CAdminMessage::ShowMessage(array("MESSAGE" => Loc::getMessage('Ошибка! Инфоблок уже существует.'), "TYPE" => "ERROR"));
+//		}
+
+		$configuration = \Bitrix\Main\Config\Configuration::getInstance();
+		$uniqcle_iblock = $configuration->get('uniqcle_iblock');
+		$uniqcle_iblock['id'] = $ID;
+		$configuration->add('uniqcle_iblock', $uniqcle_iblock);
+		$configuration->saveConfiguration();
 
 		return $ID;
 	}

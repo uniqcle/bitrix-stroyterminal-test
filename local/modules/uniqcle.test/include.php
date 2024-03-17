@@ -11,5 +11,6 @@ CModule::AddAutoloadClasses(
 	"uniqcle.test",
 	array(
 		"Uniqcle\\IBlock\\IBlockUniqcle" => "lib/iblock.php",
+		"Uniqcle\\IBlock\\TestGetlistFactory" => "lib/getlist.php",
 	)
 );

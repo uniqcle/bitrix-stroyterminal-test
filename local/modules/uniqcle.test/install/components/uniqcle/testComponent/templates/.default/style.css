@@ -1,0 +1,35 @@
+
+.list-header {
+    font-weight: 700;
+}
+
+.list-content {
+    background-color: rgb(216, 246, 239);
+}
+
+.list-group{
+    display: flex;
+    gap: 5px;
+}
+
+.fade-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(74, 77, 75, 0.69);
+}
+
+
+.content-hidden {
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+[data-name], [data-tab] {
+    cursor: pointer;
+}
